@@ -1,6 +1,10 @@
 PODS:
   - AndesUI (3.20.1):
+    - AndesUI/AndesBottomSheet (= 3.20.1)
     - AndesUI/Core (= 3.20.1)
+    - AndesUI/LocalIcons (= 3.20.1)
+  - AndesUI/AndesBottomSheet (3.20.1):
+    - AndesUI/Core
   - AndesUI/Core (3.20.1):
     - AndesUI/LocalIcons
   - AndesUI/LocalIcons (3.20.1)
@@ -13,7 +17,7 @@ EXTERNAL SOURCES:
     :podspec: "../ExampleObjectiveC/AndesUI.podspec"
 
 SPEC CHECKSUMS:
-  AndesUI: 1212b7e5764e978350a72695c299d370eb7494a5
+  AndesUI: ee9419402269a79bfd210341b619e183f7725533
 
 PODFILE CHECKSUM: 430e48380e90b6c854e9a39926ca3fce3d7662b4
 
