@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-gem 'cocoapods', '~> 1.8.4'
-gem 'slather', '2.4.2'
+gem 'cocoapods', '~> 1.10.0'
+gem 'slather', '2.5.0'
 gem 'fastlane', '~>2.55'
 gem 'rake'
 gem 'octokit', '~>4.7.0'

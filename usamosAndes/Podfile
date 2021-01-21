@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+
+
+target 'usamosAndes' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for usamosAndes
+  #pod 'MercadoPagoSDKV4/ESC', :path => '../'
+
+
+  #pod "AndesUI"
+  pod 'AndesUI', :podspec => '../ExampleObjectiveC/AndesUI.podspec'
+  
+  target 'usamosAndesTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'usamosAndesUITests' do
+    # Pods for testing
+  end
+
+end

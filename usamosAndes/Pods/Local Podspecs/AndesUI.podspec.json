@@ -1,0 +1,75 @@
+{
+  "name": "AndesUI",
+  "version": "3.20.1",
+  "authors": "Mercado Libre",
+  "homepage": "https://github.com/mercadolibre/fury_andesui-ios",
+  "summary": "A cocoa pod containing..",
+  "source": {
+    "http": "http://127.0.0.1:80/AndesUISource.zip"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": "5.0",
+  "requires_arc": true,
+  "static_framework": true,
+  "frameworks": "AndesUI",
+  "xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
+  },
+  "vendored_frameworks": "AndesUI.framework",
+  "default_subspecs": "Core",
+  "source_files": "AndesUI/**/*.{swift}",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "LibraryComponents/Classes/Core/**/*.{h,m,swift}",
+      "resource_bundles": {
+        "AndesUIResources": [
+          "LibraryComponents/Classes/Core/**/*.{xib}",
+          "LibraryComponents/Resources/Core/Assets/AndesPaletteColors.xcassets",
+          "LibraryComponents/Resources/Core/Strings/*.lproj"
+        ]
+      },
+      "dependencies": {
+        "AndesUI/LocalIcons": [
+
+        ]
+      }
+    },
+    {
+      "name": "LocalIcons",
+      "resource_bundles": {
+        "AndesIcons": [
+          "LibraryComponents/Resources/LocalIcons/Assets/Images.xcassets"
+        ]
+      }
+    },
+    {
+      "name": "AndesBottomSheet",
+      "source_files": "LibraryComponents/Classes/AndesBottomSheet/**/*.{h,m,swift}",
+      "dependencies": {
+        "AndesUI/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "Default",
+      "source_files": [
+        "MercadoPagoSDK/MercadoPagoSDK/**/**/**.{h,m,swift}"
+      ],
+      "resources": [
+        "MercadoPagoSDK/Resources/**/*.xib"
+      ],
+      "resource_bundles": {
+        "MercadoPagoSDKResources": [
+          "MercadoPagoSDK/Resources/**/*.xcassets",
+          "MercadoPagoSDK/Resources/**/*.{lproj,strings,stringsdict}",
+          "MercadoPagoSDK/Resources/**/*.plist"
+        ]
+      }
+    }
+  ],
+  "swift_version": "5.0"
+}

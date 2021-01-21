@@ -1,0 +1,6 @@
+framework module AndesUI {
+  umbrella header "AndesUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
