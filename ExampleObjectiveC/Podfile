@@ -15,7 +15,7 @@ target 'MercadoPagoSDKExamplesObjectiveC' do
   # Pods for MercadoPagoSDKExamplesObjectiveC
   # UI Meli Lib
     pod 'MercadoPagoSDKV4/ESC', :path => '../'
-    pod 'AndesUI', :path => './AndesUIlocal.podspec'
+    pod 'AndesUI', :podspec => './AndesUI.podspec'
 
   #target 'MercadoPagoSDKExamplesObjectiveCTests' do
    # inherit! :search_paths
