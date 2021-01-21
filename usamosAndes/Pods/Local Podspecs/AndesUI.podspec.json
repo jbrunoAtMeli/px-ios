@@ -4,8 +4,11 @@
   "authors": "Mercado Libre",
   "homepage": "https://github.com/mercadolibre/fury_andesui-ios",
   "summary": "A cocoa pod containing..",
+  "license": {
+    "type": "BSD"
+  },
   "source": {
-    "http": "http://127.0.0.1:80/AndesUISource.zip"
+    "http": "http://127.0.0.1:80/LibraryComponents.zip"
   },
   "platforms": {
     "ios": "10.0"
@@ -13,13 +16,6 @@
   "swift_versions": "5.0",
   "requires_arc": true,
   "static_framework": true,
-  "frameworks": "AndesUI",
-  "xcconfig": {
-    "FRAMEWORK_SEARCH_PATHS": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
-  },
-  "vendored_frameworks": "AndesUI.framework",
-  "default_subspecs": "Core",
-  "source_files": "AndesUI/**/*.{swift}",
   "subspecs": [
     {
       "name": "Core",
@@ -51,22 +47,6 @@
       "dependencies": {
         "AndesUI/Core": [
 
-        ]
-      }
-    },
-    {
-      "name": "Default",
-      "source_files": [
-        "MercadoPagoSDK/MercadoPagoSDK/**/**/**.{h,m,swift}"
-      ],
-      "resources": [
-        "MercadoPagoSDK/Resources/**/*.xib"
-      ],
-      "resource_bundles": {
-        "MercadoPagoSDKResources": [
-          "MercadoPagoSDK/Resources/**/*.xcassets",
-          "MercadoPagoSDK/Resources/**/*.{lproj,strings,stringsdict}",
-          "MercadoPagoSDK/Resources/**/*.plist"
         ]
       }
     }

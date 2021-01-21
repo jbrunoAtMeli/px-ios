@@ -14,7 +14,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func buttonDidTouch(_ sender: Any) {
+        let rootViewController = ExampleContentViewController()
+        let sheet = AndesBottomSheetViewController(rootViewController: rootViewController)
+        sheet.titleBar.text = "This is a title"
+        sheet.titleBar.textAlignment = .center
+        
+        present(sheet, animated: true)
+        
+    }
+    
+    
 
 }
 
