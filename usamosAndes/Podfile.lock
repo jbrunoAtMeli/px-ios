@@ -1,16 +1,21 @@
 PODS:
+  - AndesUI (3.19.0)
   - MyFramework (1.0.0)
 
 DEPENDENCIES:
+  - AndesUI (from `AndesUI.podspec`)
   - MyFramework (from `MyFramework.podspec`)
 
 EXTERNAL SOURCES:
+  AndesUI:
+    :podspec: AndesUI.podspec
   MyFramework:
     :podspec: MyFramework.podspec
 
 SPEC CHECKSUMS:
+  AndesUI: c086a3b137a1e2c0f1abdbce4c7d5146b9843ab0
   MyFramework: 6b7ad721097b63d24d0f238a7f09c03498646aa5
 
-PODFILE CHECKSUM: 3d84a1c5fc60bd93cb3b3115af32ba1b52aa7eb4
+PODFILE CHECKSUM: 83a2d643b6e4800ae68fbf5ea07c6ffc5e5ec48b
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.0

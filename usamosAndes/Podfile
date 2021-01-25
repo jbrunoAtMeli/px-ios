@@ -1,18 +1,23 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '12.0'
+source 'git@github.com:mercadolibre/mobile-ios_specs.git'
+source 'https://cdn.cocoapods.org/'
 
+plugin 'cocoapods-clean_build_phases_scripts'
+plugin 'cocoapods-precompiled'
 
 
 target 'usamosAndes' do
   # Comment the next line if you don't want to use dynamic frameworks
-  #use_frameworks!
+  use_frameworks!
 
   # Pods for usamosAndes
   #pod 'MercadoPagoSDKV4/ESC', :path => '../'
 
-
-  #pod "AndesUI"
-  #pod 'AndesUI' , :podspec => 'AndesUI.podspec'
+  #pod 'MLCheckout', '8.50.0', :precompiled => true
+  #pod "AndesUI",'3.19.0',:precompiled => true
+  
+  pod 'AndesUI' , :podspec => 'AndesUI.podspec'
   #pod 'TallyGoKit', :podspec => 'TallyGoKit.podspec'
   
   pod 'MyFramework', :podspec => 'MyFramework.podspec'
