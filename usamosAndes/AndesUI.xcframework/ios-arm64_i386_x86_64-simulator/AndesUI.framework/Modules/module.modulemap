@@ -1,0 +1,11 @@
+framework module AndesUI {
+  umbrella header "AndesUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module AndesUI.Swift {
+    header "AndesUI-Swift.h"
+    requires objc
+}

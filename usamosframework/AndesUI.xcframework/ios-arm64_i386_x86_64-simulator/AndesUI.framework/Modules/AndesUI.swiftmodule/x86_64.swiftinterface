@@ -1,0 +1,1911 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AndesUI
+@_exported import AndesUI
+import Foundation
+import Swift
+import UIKit
+@objc public enum AndesBadgeBorder : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case standard
+  case corner
+  case rounded
+  public static func keyFor(_ value: AndesUI.AndesBadgeBorder) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesBadgeBorder]
+  public static var allCases: [AndesUI.AndesBadgeBorder] {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AndesBadgeDot : UIKit.UIView {
+  @objc public var type: AndesUI.AndesBadgeType {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc public init(type: AndesUI.AndesBadgeType)
+  @objc deinit
+}
+@objc public enum AndesBadgeHierarchy : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case loud
+  case quiet
+  public static func keyFor(_ value: AndesUI.AndesBadgeHierarchy) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesBadgeHierarchy]
+  public static var allCases: [AndesUI.AndesBadgeHierarchy] {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AndesBadgePill : UIKit.UIView {
+  @objc public var hierarchy: AndesUI.AndesBadgeHierarchy {
+    @objc get
+    @objc set
+  }
+  @objc public var type: AndesUI.AndesBadgeType {
+    @objc get
+    @objc set
+  }
+  @objc public var border: AndesUI.AndesBadgeBorder {
+    @objc get
+    @objc set
+  }
+  @objc public var size: AndesUI.AndesBadgeSize {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var text: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc public init(hierarchy: AndesUI.AndesBadgeHierarchy, type: AndesUI.AndesBadgeType, border: AndesUI.AndesBadgeBorder, size: AndesUI.AndesBadgeSize, text: Swift.String)
+  @objc deinit
+}
+extension AndesBadgePill {
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'hierarchy' instead.")
+  @IBInspectable dynamic public var ibHierarchy: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'type' instead.")
+  @IBInspectable dynamic public var ibType: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'border' instead.")
+  @IBInspectable dynamic public var ibBorder: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'size' instead.")
+  @IBInspectable dynamic public var ibSize: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+}
+@objc public enum AndesBadgeSize : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case small
+  case large
+  public static func keyFor(_ value: AndesUI.AndesBadgeSize) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesBadgeSize]
+  public static var allCases: [AndesUI.AndesBadgeSize] {
+    get
+  }
+}
+@objc public enum AndesBadgeType : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case neutral
+  case highlight
+  case success
+  case warning
+  case error
+  public static func keyFor(_ value: AndesUI.AndesBadgeType) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesBadgeType]
+  public static var allCases: [AndesUI.AndesBadgeType] {
+    get
+  }
+}
+public class AndesBodyLink {
+  public init(startIndex: Swift.Int, endIndex: Swift.Int)
+  @objc deinit
+}
+public class AndesBodyLinks {
+  public init(links: [AndesUI.AndesBodyLink], listener: @escaping ((Swift.Int) -> Swift.Void))
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class AndesBottomSheetTitleBar : UIKit.UIView {
+  @objc public var text: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var textAlignment: UIKit.NSTextAlignment {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class AndesBottomSheetTitleBarGradient : UIKit.UIView {
+  public init(maxOffset: CoreGraphics.CGFloat)
+  public func update(with scrollOffset: CoreGraphics.CGFloat)
+  @objc override dynamic public func draw(_: CoreGraphics.CGRect)
+  @objc override dynamic public func point(inside _: CoreGraphics.CGPoint, with _: UIKit.UIEvent?) -> Swift.Bool
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc deinit
+}
+@objc open class AndesBottomSheetViewController : UIKit.UIViewController {
+  @objc public var rootViewController: UIKit.UIViewController {
+    @objc get
+  }
+  @objc weak public var delegate: AndesUI.AndesBottomSheetViewControllerDelegate?
+  @objc public var titleBar: AndesUI.AndesBottomSheetTitleBar {
+    @objc get
+  }
+  @objc public init(rootViewController: UIKit.UIViewController)
+  @available(*, unavailable)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic open func viewDidLoad()
+  @objc override dynamic open func viewDidLayoutSubviews()
+  @objc override dynamic open func preferredContentSizeDidChange(forChildContentContainer container: UIKit.UIContentContainer)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+}
+@objc public protocol AndesBottomSheetViewControllerDelegate : AnyObject {
+  @objc func sheetViewController(_ sheetViewController: AndesUI.AndesBottomSheetViewController, heightDidChange height: CoreGraphics.CGFloat)
+}
+@_hasMissingDesignatedInitializers public class AndesBundle {
+  public static func bundle() -> Foundation.Bundle
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class AndesButton : UIKit.UIControl {
+  @objc public var hierarchy: AndesUI.AndesButtonHierarchy {
+    @objc get
+    @objc set
+  }
+  @objc public var size: AndesUI.AndesButtonSize {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var text: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc public var icon: AndesUI.AndesButtonIcon? {
+    get
+  }
+  @IBInspectable @objc override dynamic public var isEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public init(text: Swift.String, hierarchy: AndesUI.AndesButtonHierarchy, size: AndesUI.AndesButtonSize, icon: AndesUI.AndesButtonIcon? = nil)
+  @objc public func setLargeSizeWithIcon(_ icon: AndesUI.AndesButtonIcon)
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+}
+extension AndesButton {
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'hierarchy' instead.")
+  @IBInspectable dynamic public var ibHierarchy: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'size' instead.")
+  @IBInspectable dynamic public var ibSize: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+}
+@objc public enum AndesButtonHierarchy : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case loud
+  case quiet
+  case transparent
+  public static func keyFor(_ value: AndesUI.AndesButtonHierarchy) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesButtonHierarchy]
+  public static var allCases: [AndesUI.AndesButtonHierarchy] {
+    get
+  }
+}
+@objc public class AndesButtonIcon : ObjectiveC.NSObject {
+  @objc public var icon: UIKit.UIImage {
+    get
+  }
+  @objc public var orientation: AndesUI.AndesButtonOrientation {
+    get
+  }
+  @objc public init(icon: UIKit.UIImage, orientation: AndesUI.AndesButtonOrientation)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public enum AndesButtonOrientation : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case left
+  case right
+  public static func keyFor(_ value: AndesUI.AndesButtonOrientation) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesButtonOrientation]
+  public static var allCases: [AndesUI.AndesButtonOrientation] {
+    get
+  }
+}
+@objc public enum AndesButtonSize : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case large
+  case medium
+  case small
+  public static func keyFor(_ value: AndesUI.AndesButtonSize) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesButtonSize]
+  public static var allCases: [AndesUI.AndesButtonSize] {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class AndesCard : UIKit.UIView {
+  public var cardView: UIKit.UIView {
+    get
+    set
+  }
+  @objc @IBInspectable public var title: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var padding: AndesUI.AndesCardPadding {
+    @objc get
+    @objc set
+  }
+  @objc public var hierarchy: AndesUI.AndesCardHierarchy {
+    @objc get
+    @objc set
+  }
+  @objc public var style: AndesUI.AndesCardStyle {
+    @objc get
+    @objc set
+  }
+  @objc public var type: AndesUI.AndesCardType {
+    @objc get
+    @objc set
+  }
+  @objc public var actionLinkTitle: Swift.String? {
+    @objc get
+  }
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc public init(cardView: UIKit.UIView, title: Swift.String? = nil, padding: AndesUI.AndesCardPadding = .none, hierarchy: AndesUI.AndesCardHierarchy = .primary, style: AndesUI.AndesCardStyle = .elevated, type: AndesUI.AndesCardType = .none)
+  @objc public func setLinkAction(_ title: Swift.String, handler: @escaping ((AndesUI.AndesCard) -> Swift.Void))
+  @objc public func removeLinkAction()
+  @objc public func setCardAction(handler: @escaping ((AndesUI.AndesCard) -> Swift.Void))
+  @objc public func removeCardAction()
+  @objc deinit
+}
+extension AndesCard {
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'padding' instead.")
+  @IBInspectable dynamic public var ibPadding: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'style' instead.")
+  @IBInspectable dynamic public var ibStyle: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'type' instead.")
+  @IBInspectable dynamic public var ibType: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'hierarchy' instead.")
+  @IBInspectable dynamic public var ibHierarchy: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+}
+@objc public enum AndesCardHierarchy : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case primary
+  case secondary
+  case secondaryDark
+  public static func keyFor(_ value: AndesUI.AndesCardHierarchy) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesCardHierarchy]
+  public static var allCases: [AndesUI.AndesCardHierarchy] {
+    get
+  }
+}
+@objc public enum AndesCardPadding : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case none
+  case small
+  case medium
+  case large
+  case xlarge
+  public static func keyFor(_ value: AndesUI.AndesCardPadding) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesCardPadding]
+  public static var allCases: [AndesUI.AndesCardPadding] {
+    get
+  }
+}
+@objc public enum AndesCardStyle : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case elevated
+  case outline
+  public static func keyFor(_ value: AndesUI.AndesCardStyle) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesCardStyle]
+  public static var allCases: [AndesUI.AndesCardStyle] {
+    get
+  }
+}
+@objc public enum AndesCardType : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case none
+  case highlight
+  case error
+  case success
+  case warning
+  public static func keyFor(_ value: AndesUI.AndesCardType) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesCardType]
+  public static var allCases: [AndesUI.AndesCardType] {
+    get
+  }
+}
+@objc public enum AndesCellType : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case simple
+  case chevron
+  case radioButton
+  case checkBox
+  public static func keyFor(_ value: AndesUI.AndesCellType) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesCellType]
+  public static var allCases: [AndesUI.AndesCellType] {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AndesCheckbox : UIKit.UIView {
+  @objc @IBInspectable public var title: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var type: AndesUI.AndesCheckboxType {
+    @objc get
+    @objc set
+  }
+  @objc public var align: AndesUI.AndesCheckboxAlign {
+    @objc get
+    @objc set
+  }
+  @objc public var status: AndesUI.AndesCheckboxStatus {
+    @objc get
+    @objc set
+  }
+  @objc public func setCheckboxDidTapped(callback: @escaping ((AndesUI.AndesCheckbox) -> Swift.Void))
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc public init(type: AndesUI.AndesCheckboxType, align: AndesUI.AndesCheckboxAlign, status: AndesUI.AndesCheckboxStatus, title: Swift.String)
+  @objc deinit
+}
+extension AndesCheckbox {
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'type' instead.")
+  @IBInspectable dynamic public var ibType: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'status' instead.")
+  @IBInspectable dynamic public var ibStatus: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'align' instead.")
+  @IBInspectable dynamic public var ibAlign: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+}
+@objc public enum AndesCheckboxAlign : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case left
+  case right
+  public static func keyFor(_ value: AndesUI.AndesCheckboxAlign) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesCheckboxAlign]
+  public static var allCases: [AndesUI.AndesCheckboxAlign] {
+    get
+  }
+}
+@objc public enum AndesCheckboxStatus : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case selected
+  case unselected
+  case undefined
+  public static func keyFor(_ value: AndesUI.AndesCheckboxStatus) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesCheckboxStatus]
+  public static var allCases: [AndesUI.AndesCheckboxStatus] {
+    get
+  }
+}
+@objc public enum AndesCheckboxType : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case idle
+  case disabled
+  case error
+  public static func keyFor(_ value: AndesUI.AndesCheckboxType) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesCheckboxType]
+  public static var allCases: [AndesUI.AndesCheckboxType] {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers public class AndesChevronCell : AndesUI.AndesListCell {
+  @available(swift, obsoleted: 1.0)
+  @objc public init(withTitle title: Swift.String, subtitle: Swift.String, thumbnail: AndesUI.AndesThumbnail? = nil, numberOfLines: Swift.Int)
+  public init(withTitle title: Swift.String, subtitle: Swift.String? = String(), thumbnail: AndesUI.AndesThumbnail? = nil, numberOfLines: Swift.Int = 0)
+  @objc deinit
+}
+@objc public class AndesCoachMarkEntity : ObjectiveC.NSObject {
+  @objc public init(steps: [AndesUI.AndesCoachMarkStepEntity], scrollView: UIKit.UIScrollView?, completionHandler: (() -> Swift.Void)?)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public class AndesCoachMarkStepEntity : ObjectiveC.NSObject {
+  @objc public enum HighlightStyle : Swift.Int {
+    case rectangle
+    case circle
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public init(title: Swift.String, description: Swift.String, view: UIKit.UIView, style: AndesUI.AndesCoachMarkStepEntity.HighlightStyle, nextText: Swift.String)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public class AndesCoachMarkView : UIKit.UIView {
+  @objc weak public var delegate: AndesUI.AndesCoachMarkViewDelegate?
+  @objc final public let overlayColor: UIKit.UIColor
+  @objc public init(model: AndesUI.AndesCoachMarkEntity)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc public func start()
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+}
+@objc public protocol AndesCoachMarkViewDelegate : AnyObject {
+  @objc func onShowNext(stepIndex: Swift.Int)
+  @objc func onClose(stepIndex: Swift.Int)
+}
+@objc extension UIColor {
+  @_inheritsConvenienceInitializers @objc(AndesColors) public class Andes : ObjectiveC.NSObject {
+    @objc public static let white: UIKit.UIColor
+    @objc public static let gray040: UIKit.UIColor
+    @objc public static let gray070: UIKit.UIColor
+    @objc public static let gray100: UIKit.UIColor
+    @objc public static let gray250: UIKit.UIColor
+    @objc public static let gray450: UIKit.UIColor
+    @objc public static let gray800: UIKit.UIColor
+    @objc public static let graySolid040: UIKit.UIColor
+    @objc public static let graySolid070: UIKit.UIColor
+    @objc public static let graySolid100: UIKit.UIColor
+    @objc public static let graySolid250: UIKit.UIColor
+    @objc public static let graySolid450: UIKit.UIColor
+    @objc public static let graySolid800: UIKit.UIColor
+    @objc public static let yellowML500: UIKit.UIColor
+    @objc public static let blueML100: UIKit.UIColor
+    @objc public static let blueML150: UIKit.UIColor
+    @objc public static let blueML200: UIKit.UIColor
+    @objc public static let blueML300: UIKit.UIColor
+    @objc public static let blueML400: UIKit.UIColor
+    @objc public static let blueML500: UIKit.UIColor
+    @objc public static let blueML600: UIKit.UIColor
+    @objc public static let blueML700: UIKit.UIColor
+    @objc public static let blueML800: UIKit.UIColor
+    @objc public static let blueMP100: UIKit.UIColor
+    @objc public static let blueMP150: UIKit.UIColor
+    @objc public static let blueMP200: UIKit.UIColor
+    @objc public static let blueMP300: UIKit.UIColor
+    @objc public static let blueMP400: UIKit.UIColor
+    @objc public static let blueMP500: UIKit.UIColor
+    @objc public static let blueMP600: UIKit.UIColor
+    @objc public static let blueMP700: UIKit.UIColor
+    @objc public static let blueMP800: UIKit.UIColor
+    @objc public static let green100: UIKit.UIColor
+    @objc public static let green150: UIKit.UIColor
+    @objc public static let green200: UIKit.UIColor
+    @objc public static let green300: UIKit.UIColor
+    @objc public static let green400: UIKit.UIColor
+    @objc public static let green500: UIKit.UIColor
+    @objc public static let green600: UIKit.UIColor
+    @objc public static let green700: UIKit.UIColor
+    @objc public static let green800: UIKit.UIColor
+    @objc public static let orange100: UIKit.UIColor
+    @objc public static let orange150: UIKit.UIColor
+    @objc public static let orange200: UIKit.UIColor
+    @objc public static let orange300: UIKit.UIColor
+    @objc public static let orange400: UIKit.UIColor
+    @objc public static let orange500: UIKit.UIColor
+    @objc public static let orange600: UIKit.UIColor
+    @objc public static let orange700: UIKit.UIColor
+    @objc public static let orange800: UIKit.UIColor
+    @objc public static let red100: UIKit.UIColor
+    @objc public static let red150: UIKit.UIColor
+    @objc public static let red200: UIKit.UIColor
+    @objc public static let red300: UIKit.UIColor
+    @objc public static let red400: UIKit.UIColor
+    @objc public static let red500: UIKit.UIColor
+    @objc public static let red600: UIKit.UIColor
+    @objc public static let red700: UIKit.UIColor
+    @objc public static let red800: UIKit.UIColor
+    @objc deinit
+    @objc override dynamic public init()
+  }
+}
+@_hasMissingDesignatedInitializers public class AndesColorStrategyiOS10 : AndesUI.AndesColors {
+  @objc public var bgColorPrimary: UIKit.UIColor
+  @objc public var bgColorSecondary: UIKit.UIColor
+  @objc public var bgColorWhite: UIKit.UIColor
+  @objc public var brandColor500: UIKit.UIColor
+  @objc public var accentColor: UIKit.UIColor
+  @objc public var accentColor100: UIKit.UIColor
+  @objc public var accentColor150: UIKit.UIColor
+  @objc public var accentColor200: UIKit.UIColor
+  @objc public var accentColor300: UIKit.UIColor
+  @objc public var accentColor400: UIKit.UIColor
+  @objc public var accentColor500: UIKit.UIColor
+  @objc public var accentColor600: UIKit.UIColor
+  @objc public var accentColor700: UIKit.UIColor
+  @objc public var accentColor800: UIKit.UIColor
+  @objc public var textColorPrimary: UIKit.UIColor
+  @objc public var textColorSecondary: UIKit.UIColor
+  @objc public var textColorDisabled: UIKit.UIColor
+  @objc public var textColorNegative: UIKit.UIColor
+  @objc public var textColorCaution: UIKit.UIColor
+  @objc public var textColorPositive: UIKit.UIColor
+  @objc public var tetColorLink: UIKit.UIColor
+  @objc public var textColorWhite: UIKit.UIColor
+  @objc public var feedbackColorCaution: UIKit.UIColor
+  @objc public var feedbackColorNegative: UIKit.UIColor
+  @objc public var feedbackColorPositive: UIKit.UIColor
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(iOS 11.0, *)
+public class AndesColorStrategyiOS11 : AndesUI.AndesColors {
+  @objc public var bgColorPrimary: UIKit.UIColor
+  @objc public var bgColorSecondary: UIKit.UIColor
+  @objc public var bgColorWhite: UIKit.UIColor
+  @objc public var brandColor500: UIKit.UIColor
+  @objc public var accentColor: UIKit.UIColor
+  @objc public var accentColor100: UIKit.UIColor
+  @objc public var accentColor150: UIKit.UIColor
+  @objc public var accentColor200: UIKit.UIColor
+  @objc public var accentColor300: UIKit.UIColor
+  @objc public var accentColor400: UIKit.UIColor
+  @objc public var accentColor500: UIKit.UIColor
+  @objc public var accentColor600: UIKit.UIColor
+  @objc public var accentColor700: UIKit.UIColor
+  @objc public var accentColor800: UIKit.UIColor
+  @objc public var textColorPrimary: UIKit.UIColor
+  @objc public var textColorSecondary: UIKit.UIColor
+  @objc public var textColorDisabled: UIKit.UIColor
+  @objc public var textColorNegative: UIKit.UIColor
+  @objc public var textColorCaution: UIKit.UIColor
+  @objc public var textColorPositive: UIKit.UIColor
+  @objc public var tetColorLink: UIKit.UIColor
+  @objc public var textColorWhite: UIKit.UIColor
+  @objc public var feedbackColorNegative: UIKit.UIColor
+  @objc public var feedbackColorPositive: UIKit.UIColor
+  @objc public var feedbackColorCaution: UIKit.UIColor
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class AndesDatePicker : UIKit.UIControl {
+  @objc public func setDatePickerDate(maxDate: Foundation.Date? = nil, callback: @escaping ((Foundation.Date?, Swift.Bool) -> Swift.Void))
+  @objc dynamic public init()
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+}
+public protocol AndesEnumStringConvertible : Swift.CaseIterable {
+  static func keyFor(_ value: Self) -> Swift.String
+  var rawValue: Swift.Int { get }
+  func toString() -> Swift.String
+  static var allKeys: [Swift.String] { get }
+  init?(from string: Swift.String)
+}
+extension AndesEnumStringConvertible {
+  public static var allKeys: [Swift.String] {
+    get
+  }
+  public func toString() -> Swift.String
+  public init?(from string: Swift.String)
+}
+@objc public class AndesFontStyle : ObjectiveC.NSObject {
+  @objc public var textColor: UIKit.UIColor {
+    get
+  }
+  @objc public var font: UIKit.UIFont {
+    get
+  }
+  @objc public var lineSpacing: CoreGraphics.CGFloat {
+    get
+  }
+  @available(*, deprecated, renamed: "lineSpacing")
+  @objc public var lineHeight: CoreGraphics.CGFloat {
+    @objc get
+  }
+  @available(*, deprecated, message: "Please use init with init(textColor:font:lineSpacing:)' instead")
+  @objc public init(textColor: UIKit.UIColor, font: UIKit.UIFont, lineHeight: CoreGraphics.CGFloat)
+  @objc public init(textColor: UIKit.UIColor, font: UIKit.UIFont, lineSpacing: CoreGraphics.CGFloat)
+  @objc public init(textColor: UIKit.UIColor, font: UIKit.UIFont, sketchLineHeight: CoreGraphics.CGFloat)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class AndesFontSize : ObjectiveC.NSObject {
+  @objc public static let titleXL: CoreGraphics.CGFloat
+  @objc public static let titleL: CoreGraphics.CGFloat
+  @objc public static let titleM: CoreGraphics.CGFloat
+  @objc public static let titleS: CoreGraphics.CGFloat
+  @objc public static let titleXS: CoreGraphics.CGFloat
+  @objc public static let bodyL: CoreGraphics.CGFloat
+  @objc public static let bodyM: CoreGraphics.CGFloat
+  @objc public static let bodyS: CoreGraphics.CGFloat
+  @objc public static let bodyXS: CoreGraphics.CGFloat
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_inheritsConvenienceInitializers @objc public class AndesIconsProvider : ObjectiveC.NSObject {
+  @objc public static func loadIcon(name: Swift.String, success: (UIKit.UIImage) -> Swift.Void)
+  @objc public static func loadIcon(name: Swift.String, success: (UIKit.UIImage) -> Swift.Void, failure: @escaping (Swift.Error?) -> Swift.Void)
+  @objc public static func loadIcon(name: Swift.String, placeItInto: UIKit.UIImageView)
+  @objc public static func loadIcon(name: Swift.String, placeItInto: UIKit.UIImageView, failure: @escaping (Swift.Error?) -> Swift.Void)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public protocol AndesIconsStrategy {
+  @objc func loadIcon(name: Swift.String, success: (UIKit.UIImage) -> Swift.Void, failure: ((Swift.Error?) -> Swift.Void)?)
+}
+@_hasMissingDesignatedInitializers @objc public class AndesList : UIKit.UIView {
+  @objc weak public var delegate: AndesUI.AndesListDelegate?
+  @objc weak public var dataSource: AndesUI.AndesListDataSource?
+  @objc public var separatorStyle: AndesUI.AndesSeparatorStyle
+  @objc public var selectionStyle: AndesUI.AndesSelectionStyle
+  @objc public var listType: AndesUI.AndesCellType
+  @objc public var size: AndesUI.AndesListSize
+  @objc public func reloadData()
+  public init(type: AndesUI.AndesCellType = .simple)
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+}
+extension AndesList {
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'listType' instead.")
+  @IBInspectable dynamic public var ibType: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class AndesListCell : UIKit.UITableViewCell {
+  @objc public var type: AndesUI.AndesCellType {
+    get
+  }
+  @available(iOS 3.0, *)
+  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @objc deinit
+}
+@objc public protocol AndesListDataSource {
+  @objc func andesList(_ listView: AndesUI.AndesList, cellForRowAt indexPath: Foundation.IndexPath) -> AndesUI.AndesListCell
+  @objc func andesList(_ listView: AndesUI.AndesList, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc func numberOfSections(_ listView: AndesUI.AndesList) -> Swift.Int
+}
+@objc public protocol AndesListDelegate {
+  @objc optional func andesList(_ listView: AndesUI.AndesList, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+@objc public enum AndesListSize : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case small
+  case medium
+  case large
+  public static func keyFor(_ value: AndesUI.AndesListSize) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesListSize]
+  public static var allCases: [AndesUI.AndesListSize] {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AndesMessage : UIKit.UIView {
+  @objc public var hierarchy: AndesUI.AndesMessageHierarchy {
+    @objc get
+    @objc set
+  }
+  @objc public var type: AndesUI.AndesMessageType {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var title: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var body: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var isDismissable: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var primaryActionText: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var secondaryActionText: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var linkActionText: Swift.String? {
+    @objc get
+    @objc set
+  }
+  public var bodyLinks: AndesUI.AndesBodyLinks?
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc public init(hierarchy: AndesUI.AndesMessageHierarchy, type: AndesUI.AndesMessageType, title: Swift.String, body: Swift.String)
+  @objc public func onDismiss(_ callback: ((AndesUI.AndesMessage) -> Swift.Void)?)
+  @objc public func setPrimaryAction(_ title: Swift.String, handler: ((AndesUI.AndesMessage) -> Swift.Void)?)
+  @objc public func setSecondaryAction(_ title: Swift.String, handler: ((AndesUI.AndesMessage) -> Swift.Void)?)
+  @objc public func setLinkAction(_ title: Swift.String, handler: ((AndesUI.AndesMessage) -> Swift.Void)?)
+  public func setBodyLinks(_ bodyLinks: AndesUI.AndesBodyLinks)
+  @objc deinit
+}
+extension AndesMessage {
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'type' instead.")
+  @IBInspectable dynamic public var ibType: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'hierarchy' instead.")
+  @IBInspectable dynamic public var ibHierarchy: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+}
+@objc public enum AndesMessageHierarchy : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case loud
+  case quiet
+  public static func keyFor(_ value: AndesUI.AndesMessageHierarchy) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesMessageHierarchy]
+  public static var allCases: [AndesUI.AndesMessageHierarchy] {
+    get
+  }
+}
+@objc public enum AndesMessageType : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case neutral
+  case success
+  case warning
+  case error
+  public static func keyFor(_ value: AndesUI.AndesMessageType) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesMessageType]
+  public static var allCases: [AndesUI.AndesMessageType] {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AndesRadioButton : UIKit.UIView {
+  @objc @IBInspectable public var title: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var type: AndesUI.AndesRadioButtonType {
+    @objc get
+    @objc set
+  }
+  @objc public var align: AndesUI.AndesRadioButtonAlign {
+    @objc get
+    @objc set
+  }
+  @objc public var status: AndesUI.AndesRadioButtonStatus {
+    @objc get
+    @objc set
+  }
+  @objc public func setRadioButtonTapped(callback: @escaping ((AndesUI.AndesRadioButton) -> Swift.Void))
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc public init(type: AndesUI.AndesRadioButtonType, align: AndesUI.AndesRadioButtonAlign, status: AndesUI.AndesRadioButtonStatus, title: Swift.String)
+  @objc deinit
+}
+extension AndesRadioButton {
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'type' instead.")
+  @IBInspectable dynamic public var ibType: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'status' instead.")
+  @IBInspectable dynamic public var ibStatus: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'align' instead.")
+  @IBInspectable dynamic public var ibAlign: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+}
+@objc public enum AndesRadioButtonAlign : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case left
+  case right
+  public static func keyFor(_ value: AndesUI.AndesRadioButtonAlign) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesRadioButtonAlign]
+  public static var allCases: [AndesUI.AndesRadioButtonAlign] {
+    get
+  }
+}
+@objc public enum AndesRadioButtonStatus : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case selected
+  case unselected
+  public static func keyFor(_ value: AndesUI.AndesRadioButtonStatus) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesRadioButtonStatus]
+  public static var allCases: [AndesUI.AndesRadioButtonStatus] {
+    get
+  }
+}
+@objc public enum AndesRadioButtonType : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case idle
+  case disabled
+  case error
+  public static func keyFor(_ value: AndesUI.AndesRadioButtonType) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesRadioButtonType]
+  public static var allCases: [AndesUI.AndesRadioButtonType] {
+    get
+  }
+}
+@objc public enum AndesSelectionStyle : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case gray
+  case blue
+  case none
+  case defaultStyle
+  public static func keyFor(_ value: AndesUI.AndesSelectionStyle) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesSelectionStyle]
+  public static var allCases: [AndesUI.AndesSelectionStyle] {
+    get
+  }
+}
+@objc public enum AndesSeparatorStyle : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case none
+  case singleLine
+  public static func keyFor(_ value: AndesUI.AndesSeparatorStyle) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesSeparatorStyle]
+  public static var allCases: [AndesUI.AndesSeparatorStyle] {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers public class AndesSimpleCell : AndesUI.AndesListCell {
+  @available(swift, obsoleted: 1.0)
+  @objc public init(withTitle title: Swift.String, subtitle: Swift.String, thumbnail: AndesUI.AndesThumbnail? = nil, numberOfLines: Swift.Int)
+  public init(withTitle title: Swift.String, subtitle: Swift.String? = String(), thumbnail: AndesUI.AndesThumbnail? = nil, numberOfLines: Swift.Int = 0)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class AndesSnackbar : UIKit.UIView {
+  @objc public var text: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc public var duration: AndesUI.AndesSnackbarDuration {
+    @objc get
+    @objc set
+  }
+  @objc public var type: AndesUI.AndesSnackbarType {
+    @objc get
+    @objc set
+  }
+  @objc public var action: AndesUI.AndesSnackbarAction? {
+    @objc get
+    @objc set
+  }
+  @objc public func show()
+  @objc public func show(at viewController: UIKit.UIViewController)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc public init(text: Swift.String, duration: AndesUI.AndesSnackbarDuration = .normal, type: AndesUI.AndesSnackbarType = .neutral)
+  @objc deinit
+}
+@objc public class AndesSnackbarAction : ObjectiveC.NSObject {
+  @objc public init(text: Swift.String, callback: (() -> Swift.Void)? = nil)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public enum AndesSnackbarDuration : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case short = 3
+  case normal = 6
+  case long = 10
+  public static func keyFor(_ value: AndesUI.AndesSnackbarDuration) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesSnackbarDuration]
+  public static var allCases: [AndesUI.AndesSnackbarDuration] {
+    get
+  }
+}
+@objc public enum AndesSnackbarType : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case neutral
+  case success
+  case error
+  public static func keyFor(_ value: AndesUI.AndesSnackbarType) -> Swift.String
+  public func toColor() -> UIKit.UIColor
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesSnackbarType]
+  public static var allCases: [AndesUI.AndesSnackbarType] {
+    get
+  }
+}
+@objc public protocol AndesStyleSheet : AndesUI.AndesColors, AndesUI.AndesFonts {
+}
+@objc public protocol AndesColors {
+  @objc var bgColorPrimary: UIKit.UIColor { get }
+  @objc var bgColorSecondary: UIKit.UIColor { get }
+  @objc var bgColorWhite: UIKit.UIColor { get }
+  @objc var brandColor500: UIKit.UIColor { get }
+  @objc var accentColor: UIKit.UIColor { get }
+  @objc var accentColor100: UIKit.UIColor { get }
+  @objc var accentColor150: UIKit.UIColor { get }
+  @objc var accentColor200: UIKit.UIColor { get }
+  @objc var accentColor300: UIKit.UIColor { get }
+  @objc var accentColor400: UIKit.UIColor { get }
+  @objc var accentColor500: UIKit.UIColor { get }
+  @objc var accentColor600: UIKit.UIColor { get }
+  @objc var accentColor700: UIKit.UIColor { get }
+  @objc var accentColor800: UIKit.UIColor { get }
+  @objc var textColorPrimary: UIKit.UIColor { get }
+  @objc var textColorSecondary: UIKit.UIColor { get }
+  @objc var textColorDisabled: UIKit.UIColor { get }
+  @objc var textColorNegative: UIKit.UIColor { get }
+  @objc var textColorCaution: UIKit.UIColor { get }
+  @objc var textColorPositive: UIKit.UIColor { get }
+  @objc var tetColorLink: UIKit.UIColor { get }
+  @objc var textColorWhite: UIKit.UIColor { get }
+  @objc var feedbackColorNegative: UIKit.UIColor { get }
+  @objc var feedbackColorCaution: UIKit.UIColor { get }
+  @objc var feedbackColorPositive: UIKit.UIColor { get }
+}
+@objc public protocol AndesFonts {
+  @objc func titleXL(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc func titleL(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc func titleM(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc func titleS(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc func titleXS(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc func bodyL(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc func bodyM(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc func bodyS(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc func bodyXS(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc func regularSystemFont(size: CoreGraphics.CGFloat) -> UIKit.UIFont
+  @objc func lightSystemFont(size: CoreGraphics.CGFloat) -> UIKit.UIFont
+  @objc func mediumSystemFontOfSize(size: CoreGraphics.CGFloat) -> UIKit.UIFont
+  @objc func semiboldSystemFontOfSize(size: CoreGraphics.CGFloat) -> UIKit.UIFont
+}
+@_inheritsConvenienceInitializers @objc public class AndesStyleSheetDefault : ObjectiveC.NSObject, AndesUI.AndesStyleSheet {
+  @objc public var bgColorPrimary: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var bgColorSecondary: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var bgColorWhite: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var brandColor500: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var accentColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var accentColor100: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var accentColor150: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var accentColor200: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var accentColor300: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var accentColor400: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var accentColor500: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var accentColor600: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var accentColor700: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var accentColor800: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var textColorPrimary: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var textColorSecondary: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var textColorDisabled: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var textColorNegative: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var textColorCaution: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var textColorPositive: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var tetColorLink: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var textColorWhite: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var feedbackColorCaution: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var feedbackColorPositive: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var feedbackColorNegative: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public init()
+  @objc public func titleXL(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc public func titleL(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc public func titleM(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc public func titleS(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc public func titleXS(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc public func bodyL(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc public func bodyM(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc public func bodyS(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc public func bodyXS(color: UIKit.UIColor) -> AndesUI.AndesFontStyle
+  @objc public func regularSystemFont(size: CoreGraphics.CGFloat) -> UIKit.UIFont
+  @objc public func lightSystemFont(size: CoreGraphics.CGFloat) -> UIKit.UIFont
+  @objc public func mediumSystemFontOfSize(size: CoreGraphics.CGFloat) -> UIKit.UIFont
+  @objc public func semiboldSystemFontOfSize(size: CoreGraphics.CGFloat) -> UIKit.UIFont
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class AndesStyleSheetManager : ObjectiveC.NSObject {
+  @objc public static var styleSheet: AndesUI.AndesStyleSheet
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_inheritsConvenienceInitializers @objc public class AndesTagChoice : UIKit.UIView {
+  @objc public var text: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var size: AndesUI.AndesTagSize {
+    @objc get
+    @objc set
+  }
+  @objc public var state: AndesUI.AndesTagState {
+    @objc get
+    @objc set
+  }
+  @objc public var type: AndesUI.AndesTagChoiceType {
+    @objc get
+    @objc set
+  }
+  @objc public var leftContent: AndesUI.AndesTagLeftContent? {
+    @objc get
+    @objc set
+  }
+  @objc public var shouldAnimateTag: Swift.Bool
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc public init(text: Swift.String, size: AndesUI.AndesTagSize, type: AndesUI.AndesTagChoiceType, state: AndesUI.AndesTagState)
+  @objc public init(text: Swift.String, size: AndesUI.AndesTagSize, type: AndesUI.AndesTagChoiceType, state: AndesUI.AndesTagState, leftContent: AndesUI.AndesTagLeftContent?)
+  @objc public func shouldSelectTag(callback: @escaping (() -> Swift.Bool))
+  @objc deinit
+}
+@objc public enum AndesTagChoiceType : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case simple
+  case dropdown
+  public static func keyFor(_ value: AndesUI.AndesTagChoiceType) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesTagChoiceType]
+  public static var allCases: [AndesUI.AndesTagChoiceType] {
+    get
+  }
+}
+@objc public protocol AndesTagLeftContent {
+}
+@objc public class AndesTagLeftContentDot : ObjectiveC.NSObject, AndesUI.AndesTagLeftContent {
+  @objc public init(backgroundColor: UIKit.UIColor)
+  @objc public init(backgroundColor: UIKit.UIColor, text: Swift.String, textColor: UIKit.UIColor)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public class AndesTagLeftContentIcon : ObjectiveC.NSObject, AndesUI.AndesTagLeftContent {
+  @objc public init(backgroundColor: UIKit.UIColor, icon: UIKit.UIImage, iconColor: UIKit.UIColor)
+  @objc public init(backgroundColor: UIKit.UIColor, andesIconName: Swift.String, iconColor: UIKit.UIColor)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public class AndesTagLeftContentImage : ObjectiveC.NSObject, AndesUI.AndesTagLeftContent {
+  @objc public init(avatar: UIKit.UIImage)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_inheritsConvenienceInitializers @objc public class AndesTagSimple : UIKit.UIView {
+  @objc public var text: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var size: AndesUI.AndesTagSize {
+    @objc get
+    @objc set
+  }
+  @objc public var type: AndesUI.AndesTagType {
+    @objc get
+    @objc set
+  }
+  @objc public var leftContent: AndesUI.AndesTagLeftContent? {
+    @objc get
+    @objc set
+  }
+  @objc public var isDismissible: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc public init(text: Swift.String, size: AndesUI.AndesTagSize, type: AndesUI.AndesTagType, isDismissible: Swift.Bool)
+  @objc public init(text: Swift.String, size: AndesUI.AndesTagSize, type: AndesUI.AndesTagType, isDismissible: Swift.Bool, leftContent: AndesUI.AndesTagLeftContent?)
+  @objc public func setDidDismiss(callback: @escaping ((AndesUI.AndesTagSimple) -> Swift.Void))
+  @objc deinit
+}
+@objc public enum AndesTagSize : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case small
+  case large
+  public static func keyFor(_ value: AndesUI.AndesTagSize) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesTagSize]
+  public static var allCases: [AndesUI.AndesTagSize] {
+    get
+  }
+}
+@objc public enum AndesTagState : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case idle
+  case selected
+  public static func keyFor(_ value: AndesUI.AndesTagState) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesTagState]
+  public static var allCases: [AndesUI.AndesTagState] {
+    get
+  }
+}
+@objc public enum AndesTagType : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case neutral
+  case highlight
+  case success
+  case warning
+  case error
+  public static func keyFor(_ value: AndesUI.AndesTagType) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesTagType]
+  public static var allCases: [AndesUI.AndesTagType] {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AndesTextArea : UIKit.UIView {
+  @objc public var state: AndesUI.AndesTextInputState {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var label: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var helper: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var counter: Swift.UInt16 {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var placeholder: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var maxLines: Swift.UInt16 {
+    @objc get
+    @objc set
+  }
+  @objc public var textInputTraits: AndesUI.AndesTextInputTraits {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var text: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc weak public var delegate: AndesUI.AndesTextAreaDelegate?
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc public init(state: AndesUI.AndesTextInputState, label: Swift.String?, helper: Swift.String?, counter: Swift.UInt16, placeholder: Swift.String?, maxLines: Swift.UInt16 = 0)
+  @objc public func setCustomInputTraits(_ traits: UIKit.UITextInputTraits)
+  @objc deinit
+}
+extension AndesTextArea {
+  @objc override dynamic public func resignFirstResponder() -> Swift.Bool
+  @objc override dynamic public func becomeFirstResponder() -> Swift.Bool
+  @objc override dynamic public var isFirstResponder: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public var inputView: UIKit.UIView? {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public var inputAccessoryView: UIKit.UIView? {
+    @objc get
+    @objc set
+  }
+}
+extension AndesTextArea {
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'state' instead.")
+  @IBInspectable dynamic public var ibState: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+}
+@objc public protocol AndesTextAreaDelegate {
+  @objc optional func andesTextAreaShouldBeginEditing(_ textArea: AndesUI.AndesTextArea) -> Swift.Bool
+  @objc optional func andesTextAreaShouldEndEditing(_ textArea: AndesUI.AndesTextArea) -> Swift.Bool
+  @objc optional func andesTextAreaDidBeginEditing(_ textArea: AndesUI.AndesTextArea)
+  @objc optional func andesTextAreaDidEndEditing(_ textArea: AndesUI.AndesTextArea)
+  @objc optional func andesTextArea(_ textArea: AndesUI.AndesTextArea, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @objc optional func andesTextAreaDidChangeSelection(_ textArea: AndesUI.AndesTextArea, selectedRange range: UIKit.UITextRange?)
+  @objc optional func andesTextAreaDidChange(_ textArea: AndesUI.AndesTextArea)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AndesTextField : UIKit.UIView {
+  @objc public var state: AndesUI.AndesTextInputState {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var label: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var helper: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var counter: Swift.UInt16 {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var placeholder: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var leftContent: AndesUI.AndesTextFieldLeftComponent? {
+    @objc get
+    @objc set
+  }
+  @objc public var rightContent: AndesUI.AndesTextFieldRightComponent? {
+    @objc get
+    @objc set
+  }
+  @objc public var textInputTraits: AndesUI.AndesTextInputTraits {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var text: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc weak public var delegate: AndesUI.AndesTextFieldDelegate?
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc public init(state: AndesUI.AndesTextInputState, label: Swift.String?, helper: Swift.String?, counter: Swift.UInt16, placeholder: Swift.String?)
+  @objc public func setCustomInputTraits(_ traits: UIKit.UITextInputTraits)
+  @objc deinit
+}
+extension AndesTextField {
+  @discardableResult
+  @objc override dynamic public func resignFirstResponder() -> Swift.Bool
+  @discardableResult
+  @objc override dynamic public func becomeFirstResponder() -> Swift.Bool
+  @objc override dynamic public var isFirstResponder: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public var inputView: UIKit.UIView? {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public var inputAccessoryView: UIKit.UIView? {
+    @objc get
+    @objc set
+  }
+}
+extension AndesTextField {
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'state' instead.")
+  @IBInspectable dynamic public var ibState: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AndesTextFieldCode : UIKit.UIView {
+  @objc @IBInspectable public var label: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var helpLabel: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var style: AndesUI.AndesTextFieldCodeStyle {
+    @objc get
+    @objc set
+  }
+  @objc public var state: AndesUI.AndesTextFieldCodeState {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var text: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc weak public var delegate: AndesUI.AndesTextFieldCodeDelegate?
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc public init(label: Swift.String?, helpLabel: Swift.String?, style: AndesUI.AndesTextFieldCodeStyle, state: AndesUI.AndesTextFieldCodeState)
+  @objc deinit
+}
+extension AndesTextFieldCode {
+  @objc dynamic open func setFocus()
+  @objc dynamic open func removeFocus()
+}
+extension AndesTextFieldCode : AndesUI.AndesTextFieldCodeDelegate {
+  @objc dynamic public func textDidChange(_ text: Swift.String)
+  @objc dynamic public func textDidComplete(_ isComplete: Swift.Bool)
+}
+extension AndesTextFieldCode {
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'state' instead.")
+  @IBInspectable dynamic public var ibState: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'style' instead.")
+  @IBInspectable dynamic public var ibStyle: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+}
+@objc public protocol AndesTextFieldCodeDelegate : ObjectiveC.NSObjectProtocol {
+  @objc optional func textDidChange(_ text: Swift.String)
+  @objc optional func textDidComplete(_ isComplete: Swift.Bool)
+}
+@objc public enum AndesTextFieldCodeState : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case IDLE
+  case ERROR
+  case DISABLED
+  public static func keyFor(_ value: AndesUI.AndesTextFieldCodeState) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesTextFieldCodeState]
+  public static var allCases: [AndesUI.AndesTextFieldCodeState] {
+    get
+  }
+}
+@objc public enum AndesTextFieldCodeStyle : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case THREESOME
+  case FOURSOME
+  case THREE_BY_THREE
+  public static func keyFor(_ value: AndesUI.AndesTextFieldCodeStyle) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesTextFieldCodeStyle]
+  public static var allCases: [AndesUI.AndesTextFieldCodeStyle] {
+    get
+  }
+}
+@objc public class AndesTextFieldComponentAction : ObjectiveC.NSObject, AndesUI.AndesTextFieldRightComponent {
+  @objc public var visibility: AndesUI.AndesTextFieldComponentVisibility {
+    get
+  }
+  @objc public var label: Swift.String {
+    get
+  }
+  @objc public init(_ actionLabel: Swift.String)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_inheritsConvenienceInitializers @objc public class AndesTextFieldComponentCheck : ObjectiveC.NSObject, AndesUI.AndesTextFieldRightComponent {
+  @objc public var visibility: AndesUI.AndesTextFieldComponentVisibility {
+    get
+  }
+  @objc public var icon: UIKit.UIImage {
+    get
+  }
+  @objc public var tintColor: UIKit.UIColor {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class AndesTextFieldComponentClear : ObjectiveC.NSObject, AndesUI.AndesTextFieldRightComponent {
+  @objc public var visibility: AndesUI.AndesTextFieldComponentVisibility {
+    get
+  }
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_inheritsConvenienceInitializers @objc public class AndesTextFieldComponentIcon : ObjectiveC.NSObject, AndesUI.AndesTextFieldRightComponent, AndesUI.AndesTextFieldLeftComponent {
+  @objc public var visibility: AndesUI.AndesTextFieldComponentVisibility {
+    get
+  }
+  @objc public var icon: UIKit.UIImage {
+    get
+  }
+  @objc public var tintColor: UIKit.UIColor {
+    get
+  }
+  @objc convenience public init(andesIconName: Swift.String, tintColor: UIKit.UIColor)
+  @objc convenience public init(icon: UIKit.UIImage, tintColor: UIKit.UIColor)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public class AndesTextFieldComponentLabel : ObjectiveC.NSObject, AndesUI.AndesTextFieldLeftComponent, AndesUI.AndesTextFieldRightComponent {
+  @objc public var visibility: AndesUI.AndesTextFieldComponentVisibility {
+    get
+  }
+  @objc final public let text: Swift.String
+  public var style: AndesUI.AndesFontStyle {
+    get
+  }
+  @objc public init(text: Swift.String)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public enum AndesTextFieldComponentVisibility : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case always
+  case whenNotEmpty
+  public static func keyFor(_ value: AndesUI.AndesTextFieldComponentVisibility) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesTextFieldComponentVisibility]
+  public static var allCases: [AndesUI.AndesTextFieldComponentVisibility] {
+    get
+  }
+}
+@objc public protocol AndesTextFieldDelegate {
+  @objc optional func andesTextFieldShouldBeginEditing(_ textField: AndesUI.AndesTextField) -> Swift.Bool
+  @objc optional func andesTextFieldShouldEndEditing(_ textField: AndesUI.AndesTextField) -> Swift.Bool
+  @objc optional func andesTextFieldDidBeginEditing(_ textField: AndesUI.AndesTextField)
+  @objc optional func andesTextFieldDidEndEditing(_ textField: AndesUI.AndesTextField)
+  @objc optional func andesTextField(_ textField: AndesUI.AndesTextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @available(iOS 13, *)
+  @objc optional func andesTextFieldDidChangeSelection(_ textField: AndesUI.AndesTextField, selectedRange range: UIKit.UITextRange?)
+  @objc optional func andesTextFieldDidChange(_ textField: AndesUI.AndesTextField)
+  @objc optional func andesTextFieldDidTapRightAction(_ textField: AndesUI.AndesTextField)
+  @objc optional func andesTextFieldShouldReturn(_ textField: AndesUI.AndesTextField) -> Swift.Bool
+  @objc optional func andesTextField(_ textField: AndesUI.AndesTextField, didDeleteBackwardAnd wasEmpty: Swift.Bool)
+}
+@objc public protocol AndesTextFieldLeftComponent {
+  @objc var visibility: AndesUI.AndesTextFieldComponentVisibility { get }
+}
+@objc public enum AndesTextInputState : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case idle
+  case error
+  case disabled
+  case readOnly
+  public static func keyFor(_ value: AndesUI.AndesTextInputState) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesTextInputState]
+  public static var allCases: [AndesUI.AndesTextInputState] {
+    get
+  }
+}
+@objc public enum AndesTextInputTraits : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case password
+  case email
+  case numberPad
+  case custom
+  public static func keyFor(_ value: AndesUI.AndesTextInputTraits) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesTextInputTraits]
+  public static var allCases: [AndesUI.AndesTextInputTraits] {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AndesThumbnail : UIKit.UIView {
+  @objc public var hierarchy: AndesUI.AndesThumbnailHierarchy {
+    @objc get
+    @objc set
+  }
+  @objc public var type: AndesUI.AndesThumbnailType {
+    @objc get
+    @objc set
+  }
+  @objc public var size: AndesUI.AndesThumbnailSize {
+    @objc get
+    @objc set
+  }
+  @objc public var state: AndesUI.AndesThumbnailState {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var image: UIKit.UIImage! {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var accentColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc public init(hierarchy: AndesUI.AndesThumbnailHierarchy, type: AndesUI.AndesThumbnailType, size: AndesUI.AndesThumbnailSize, state: AndesUI.AndesThumbnailState, image: UIKit.UIImage, accentColor: UIKit.UIColor? = .black)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc deinit
+}
+extension AndesThumbnail {
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'type' instead.")
+  @IBInspectable dynamic public var ibType: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'size' instead.")
+  @IBInspectable dynamic public var ibSize: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'hierarchy' instead.")
+  @IBInspectable dynamic public var ibHierarchy: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+  @objc @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'state' instead.")
+  @IBInspectable dynamic public var ibState: Swift.String {
+    @objc get
+    @objc set(val)
+  }
+}
+@objc public enum AndesThumbnailHierarchy : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case defaultHierarchy
+  case loud
+  case quiet
+  public static func keyFor(_ value: AndesUI.AndesThumbnailHierarchy) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesThumbnailHierarchy]
+  public static var allCases: [AndesUI.AndesThumbnailHierarchy] {
+    get
+  }
+}
+@objc public enum AndesThumbnailSize : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case size24
+  case size32
+  case size40
+  case size48
+  case size56
+  case size64
+  case size72
+  case size80
+  public static func keyFor(_ value: AndesUI.AndesThumbnailSize) -> Swift.String
+  public static func floatToAndesThumbnailSize(value: CoreGraphics.CGFloat) -> AndesUI.AndesThumbnailSize
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesThumbnailSize]
+  public static var allCases: [AndesUI.AndesThumbnailSize] {
+    get
+  }
+}
+@objc public enum AndesThumbnailState : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case enabled
+  case disabled
+  public static func keyFor(_ value: AndesUI.AndesThumbnailState) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesThumbnailState]
+  public static var allCases: [AndesUI.AndesThumbnailState] {
+    get
+  }
+}
+@objc public enum AndesThumbnailType : Swift.Int, AndesUI.AndesEnumStringConvertible {
+  case icon
+  case imageCircle
+  case imageSquare
+  public static func keyFor(_ value: AndesUI.AndesThumbnailType) -> Swift.String
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+  public typealias AllCases = [AndesUI.AndesThumbnailType]
+  public static var allCases: [AndesUI.AndesThumbnailType] {
+    get
+  }
+}
+@objc public protocol AndesTextFieldRightComponent {
+  @objc var visibility: AndesUI.AndesTextFieldComponentVisibility { get }
+}
+@objc extension UILabel {
+  @objc dynamic public func setAndesStyle(style: AndesUI.AndesFontStyle)
+}
+@objc extension UITextView {
+  @objc dynamic public func setAndesStyle(style: AndesUI.AndesFontStyle)
+}
+@objc extension UIViewController {
+  @objc dynamic public var sheetViewController: AndesUI.AndesBottomSheetViewController? {
+    @objc get
+  }
+}
+extension AndesUI.AndesBadgeBorder : Swift.Equatable {}
+extension AndesUI.AndesBadgeBorder : Swift.Hashable {}
+extension AndesUI.AndesBadgeBorder : Swift.RawRepresentable {}
+extension AndesUI.AndesBadgeHierarchy : Swift.Equatable {}
+extension AndesUI.AndesBadgeHierarchy : Swift.Hashable {}
+extension AndesUI.AndesBadgeHierarchy : Swift.RawRepresentable {}
+extension AndesUI.AndesBadgeSize : Swift.Equatable {}
+extension AndesUI.AndesBadgeSize : Swift.Hashable {}
+extension AndesUI.AndesBadgeSize : Swift.RawRepresentable {}
+extension AndesUI.AndesBadgeType : Swift.Equatable {}
+extension AndesUI.AndesBadgeType : Swift.Hashable {}
+extension AndesUI.AndesBadgeType : Swift.RawRepresentable {}
+extension AndesUI.AndesButtonHierarchy : Swift.Equatable {}
+extension AndesUI.AndesButtonHierarchy : Swift.Hashable {}
+extension AndesUI.AndesButtonHierarchy : Swift.RawRepresentable {}
+extension AndesUI.AndesButtonOrientation : Swift.Equatable {}
+extension AndesUI.AndesButtonOrientation : Swift.Hashable {}
+extension AndesUI.AndesButtonOrientation : Swift.RawRepresentable {}
+extension AndesUI.AndesButtonSize : Swift.Equatable {}
+extension AndesUI.AndesButtonSize : Swift.Hashable {}
+extension AndesUI.AndesButtonSize : Swift.RawRepresentable {}
+extension AndesUI.AndesCardHierarchy : Swift.Equatable {}
+extension AndesUI.AndesCardHierarchy : Swift.Hashable {}
+extension AndesUI.AndesCardHierarchy : Swift.RawRepresentable {}
+extension AndesUI.AndesCardPadding : Swift.Equatable {}
+extension AndesUI.AndesCardPadding : Swift.Hashable {}
+extension AndesUI.AndesCardPadding : Swift.RawRepresentable {}
+extension AndesUI.AndesCardStyle : Swift.Equatable {}
+extension AndesUI.AndesCardStyle : Swift.Hashable {}
+extension AndesUI.AndesCardStyle : Swift.RawRepresentable {}
+extension AndesUI.AndesCardType : Swift.Equatable {}
+extension AndesUI.AndesCardType : Swift.Hashable {}
+extension AndesUI.AndesCardType : Swift.RawRepresentable {}
+extension AndesUI.AndesCellType : Swift.Equatable {}
+extension AndesUI.AndesCellType : Swift.Hashable {}
+extension AndesUI.AndesCellType : Swift.RawRepresentable {}
+extension AndesUI.AndesCheckboxAlign : Swift.Equatable {}
+extension AndesUI.AndesCheckboxAlign : Swift.Hashable {}
+extension AndesUI.AndesCheckboxAlign : Swift.RawRepresentable {}
+extension AndesUI.AndesCheckboxStatus : Swift.Equatable {}
+extension AndesUI.AndesCheckboxStatus : Swift.Hashable {}
+extension AndesUI.AndesCheckboxStatus : Swift.RawRepresentable {}
+extension AndesUI.AndesCheckboxType : Swift.Equatable {}
+extension AndesUI.AndesCheckboxType : Swift.Hashable {}
+extension AndesUI.AndesCheckboxType : Swift.RawRepresentable {}
+extension AndesUI.AndesCoachMarkStepEntity.HighlightStyle : Swift.Equatable {}
+extension AndesUI.AndesCoachMarkStepEntity.HighlightStyle : Swift.Hashable {}
+extension AndesUI.AndesCoachMarkStepEntity.HighlightStyle : Swift.RawRepresentable {}
+extension AndesUI.AndesListSize : Swift.Equatable {}
+extension AndesUI.AndesListSize : Swift.Hashable {}
+extension AndesUI.AndesListSize : Swift.RawRepresentable {}
+extension AndesUI.AndesMessageHierarchy : Swift.Equatable {}
+extension AndesUI.AndesMessageHierarchy : Swift.Hashable {}
+extension AndesUI.AndesMessageHierarchy : Swift.RawRepresentable {}
+extension AndesUI.AndesMessageType : Swift.Equatable {}
+extension AndesUI.AndesMessageType : Swift.Hashable {}
+extension AndesUI.AndesMessageType : Swift.RawRepresentable {}
+extension AndesUI.AndesRadioButtonAlign : Swift.Equatable {}
+extension AndesUI.AndesRadioButtonAlign : Swift.Hashable {}
+extension AndesUI.AndesRadioButtonAlign : Swift.RawRepresentable {}
+extension AndesUI.AndesRadioButtonStatus : Swift.Equatable {}
+extension AndesUI.AndesRadioButtonStatus : Swift.Hashable {}
+extension AndesUI.AndesRadioButtonStatus : Swift.RawRepresentable {}
+extension AndesUI.AndesRadioButtonType : Swift.Equatable {}
+extension AndesUI.AndesRadioButtonType : Swift.Hashable {}
+extension AndesUI.AndesRadioButtonType : Swift.RawRepresentable {}
+extension AndesUI.AndesSelectionStyle : Swift.Equatable {}
+extension AndesUI.AndesSelectionStyle : Swift.Hashable {}
+extension AndesUI.AndesSelectionStyle : Swift.RawRepresentable {}
+extension AndesUI.AndesSeparatorStyle : Swift.Equatable {}
+extension AndesUI.AndesSeparatorStyle : Swift.Hashable {}
+extension AndesUI.AndesSeparatorStyle : Swift.RawRepresentable {}
+extension AndesUI.AndesSnackbarDuration : Swift.Equatable {}
+extension AndesUI.AndesSnackbarDuration : Swift.Hashable {}
+extension AndesUI.AndesSnackbarDuration : Swift.RawRepresentable {}
+extension AndesUI.AndesSnackbarType : Swift.Equatable {}
+extension AndesUI.AndesSnackbarType : Swift.Hashable {}
+extension AndesUI.AndesSnackbarType : Swift.RawRepresentable {}
+extension AndesUI.AndesTagChoiceType : Swift.Equatable {}
+extension AndesUI.AndesTagChoiceType : Swift.Hashable {}
+extension AndesUI.AndesTagChoiceType : Swift.RawRepresentable {}
+extension AndesUI.AndesTagSize : Swift.Equatable {}
+extension AndesUI.AndesTagSize : Swift.Hashable {}
+extension AndesUI.AndesTagSize : Swift.RawRepresentable {}
+extension AndesUI.AndesTagState : Swift.Equatable {}
+extension AndesUI.AndesTagState : Swift.Hashable {}
+extension AndesUI.AndesTagState : Swift.RawRepresentable {}
+extension AndesUI.AndesTagType : Swift.Equatable {}
+extension AndesUI.AndesTagType : Swift.Hashable {}
+extension AndesUI.AndesTagType : Swift.RawRepresentable {}
+extension AndesUI.AndesTextFieldCodeState : Swift.Equatable {}
+extension AndesUI.AndesTextFieldCodeState : Swift.Hashable {}
+extension AndesUI.AndesTextFieldCodeState : Swift.RawRepresentable {}
+extension AndesUI.AndesTextFieldCodeStyle : Swift.Equatable {}
+extension AndesUI.AndesTextFieldCodeStyle : Swift.Hashable {}
+extension AndesUI.AndesTextFieldCodeStyle : Swift.RawRepresentable {}
+extension AndesUI.AndesTextFieldComponentVisibility : Swift.Equatable {}
+extension AndesUI.AndesTextFieldComponentVisibility : Swift.Hashable {}
+extension AndesUI.AndesTextFieldComponentVisibility : Swift.RawRepresentable {}
+extension AndesUI.AndesTextInputState : Swift.Equatable {}
+extension AndesUI.AndesTextInputState : Swift.Hashable {}
+extension AndesUI.AndesTextInputState : Swift.RawRepresentable {}
+extension AndesUI.AndesTextInputTraits : Swift.Equatable {}
+extension AndesUI.AndesTextInputTraits : Swift.Hashable {}
+extension AndesUI.AndesTextInputTraits : Swift.RawRepresentable {}
+extension AndesUI.AndesThumbnailHierarchy : Swift.Equatable {}
+extension AndesUI.AndesThumbnailHierarchy : Swift.Hashable {}
+extension AndesUI.AndesThumbnailHierarchy : Swift.RawRepresentable {}
+extension AndesUI.AndesThumbnailSize : Swift.Equatable {}
+extension AndesUI.AndesThumbnailSize : Swift.Hashable {}
+extension AndesUI.AndesThumbnailSize : Swift.RawRepresentable {}
+extension AndesUI.AndesThumbnailState : Swift.Equatable {}
+extension AndesUI.AndesThumbnailState : Swift.Hashable {}
+extension AndesUI.AndesThumbnailState : Swift.RawRepresentable {}
+extension AndesUI.AndesThumbnailType : Swift.Equatable {}
+extension AndesUI.AndesThumbnailType : Swift.Hashable {}
+extension AndesUI.AndesThumbnailType : Swift.RawRepresentable {}

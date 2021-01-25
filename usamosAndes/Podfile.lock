@@ -1,24 +1,3 @@
-PODS:
-  - AndesUI (3.20.1):
-    - AndesUI/AndesBottomSheet (= 3.20.1)
-    - AndesUI/Core (= 3.20.1)
-    - AndesUI/LocalIcons (= 3.20.1)
-  - AndesUI/AndesBottomSheet (3.20.1):
-    - AndesUI/Core
-  - AndesUI/Core (3.20.1):
-    - AndesUI/LocalIcons
-  - AndesUI/LocalIcons (3.20.1)
-
-DEPENDENCIES:
-  - AndesUI (from `../ExampleObjectiveC/AndesUI.podspec`)
-
-EXTERNAL SOURCES:
-  AndesUI:
-    :podspec: "../ExampleObjectiveC/AndesUI.podspec"
-
-SPEC CHECKSUMS:
-  AndesUI: ee9419402269a79bfd210341b619e183f7725533
-
-PODFILE CHECKSUM: 430e48380e90b6c854e9a39926ca3fce3d7662b4
+PODFILE CHECKSUM: ca02c090df7640c39c897226d93eb8fe81155732
 
 COCOAPODS: 1.10.1
