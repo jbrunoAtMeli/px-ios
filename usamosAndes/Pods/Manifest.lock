@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: ca02c090df7640c39c897226d93eb8fe81155732
+PODS:
+  - MyFramework (1.0.0)
+
+DEPENDENCIES:
+  - MyFramework (from `MyFramework.podspec`)
+
+EXTERNAL SOURCES:
+  MyFramework:
+    :podspec: MyFramework.podspec
+
+SPEC CHECKSUMS:
+  MyFramework: 6b7ad721097b63d24d0f238a7f09c03498646aa5
+
+PODFILE CHECKSUM: 3d84a1c5fc60bd93cb3b3115af32ba1b52aa7eb4
 
 COCOAPODS: 1.10.1

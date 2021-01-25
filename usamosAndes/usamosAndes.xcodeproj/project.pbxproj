@@ -3,15 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		046298DCBE48077F51C68AB3 /* libPods-usamosAndesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA07764F6AC0978E0443CBDB /* libPods-usamosAndesTests.a */; };
 		0D43C9B3AFA2AA07DAE38743 /* libPods-usamosAndes-usamosAndesUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320368FBA150489E29703AD1 /* libPods-usamosAndes-usamosAndesUITests.a */; };
 		11FF42B9785B312F4261C2FA /* libPods-usamosAndes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D9CECB409E2BF51535A7B3 /* libPods-usamosAndes.a */; };
-		DF87F62025BB7A570000EB5C /* AndesUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF87F61B25BB7A3E0000EB5C /* AndesUI.xcframework */; };
-		DF87F62125BB7A570000EB5C /* AndesUI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF87F61B25BB7A3E0000EB5C /* AndesUI.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DF9A6B8D25BA00D800FB45C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A6B8C25BA00D800FB45C8 /* AppDelegate.swift */; };
 		DF9A6B8F25BA00D800FB45C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A6B8E25BA00D800FB45C8 /* SceneDelegate.swift */; };
 		DF9A6B9125BA00D800FB45C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A6B9025BA00D800FB45C8 /* ViewController.swift */; };
@@ -47,7 +45,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DF87F62125BB7A570000EB5C /* AndesUI.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,7 +58,6 @@
 		54D9CECB409E2BF51535A7B3 /* libPods-usamosAndes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-usamosAndes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CCBCAFF07CA0C20D20051A1 /* Pods-usamosAndes-usamosAndesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-usamosAndes-usamosAndesUITests.release.xcconfig"; path = "Target Support Files/Pods-usamosAndes-usamosAndesUITests/Pods-usamosAndes-usamosAndesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DA07764F6AC0978E0443CBDB /* libPods-usamosAndesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-usamosAndesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF87F61B25BB7A3E0000EB5C /* AndesUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AndesUI.xcframework; sourceTree = "<group>"; };
 		DF9A6B8925BA00D800FB45C8 /* usamosAndes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = usamosAndes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9A6B8C25BA00D800FB45C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF9A6B8E25BA00D800FB45C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,7 +84,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				11FF42B9785B312F4261C2FA /* libPods-usamosAndes.a in Frameworks */,
-				DF87F62025BB7A570000EB5C /* AndesUI.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +132,6 @@
 		DF9A6B8025BA00D800FB45C8 = {
 			isa = PBXGroup;
 			children = (
-				DF87F61B25BB7A3E0000EB5C /* AndesUI.xcframework */,
 				DF9A6B8B25BA00D800FB45C8 /* usamosAndes */,
 				DF9A6BA225BA00DA00FB45C8 /* usamosAndesTests */,
 				DF9A6BAD25BA00DB00FB45C8 /* usamosAndesUITests */,
@@ -202,6 +196,7 @@
 				DF9A6B8625BA00D800FB45C8 /* Frameworks */,
 				DF9A6B8725BA00D800FB45C8 /* Resources */,
 				DF87F62225BB7A570000EB5C /* Embed Frameworks */,
+				04BBC507990FBC8267B4762D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +234,7 @@
 				DF9A6BA625BA00DA00FB45C8 /* Sources */,
 				DF9A6BA725BA00DA00FB45C8 /* Frameworks */,
 				DF9A6BA825BA00DA00FB45C8 /* Resources */,
+				824F8C0690177396C91A2CD3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -320,6 +316,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		04BBC507990FBC8267B4762D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-usamosAndes/Pods-usamosAndes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-usamosAndes/Pods-usamosAndes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-usamosAndes/Pods-usamosAndes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4355452923359BEBAA9225C2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -362,6 +375,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		824F8C0690177396C91A2CD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-usamosAndes-usamosAndesUITests/Pods-usamosAndes-usamosAndesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-usamosAndes-usamosAndesUITests/Pods-usamosAndes-usamosAndesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-usamosAndes-usamosAndesUITests/Pods-usamosAndes-usamosAndesUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9A49BB149BB136329303E456 /* [CP] Check Pods Manifest.lock */ = {
