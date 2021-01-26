@@ -1,10 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '12.0'
-source 'git@github.com:mercadolibre/mobile-ios_specs.git'
 source 'https://cdn.cocoapods.org/'
 
-plugin 'cocoapods-clean_build_phases_scripts'
-plugin 'cocoapods-precompiled'
 
 
 target 'usamosAndes' do
@@ -20,7 +17,7 @@ target 'usamosAndes' do
   pod 'AndesUI' , :podspec => 'AndesUI.podspec'
   #pod 'TallyGoKit', :podspec => 'TallyGoKit.podspec'
   
-  pod 'MyFramework', :podspec => 'MyFramework.podspec'
+  #pod 'MyFramework', :podspec => 'MyFramework.podspec'
   
 
   target 'usamosAndesTests' do

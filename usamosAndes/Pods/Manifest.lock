@@ -1,21 +1,28 @@
 PODS:
-  - AndesUI (3.19.0)
-  - MyFramework (1.0.0)
+  - AndesUI (3.19.0):
+    - AndesUI/AndesBottomSheet (= 3.19.0)
+    - AndesUI/AndesDropdown (= 3.19.0)
+    - AndesUI/Core (= 3.19.0)
+    - AndesUI/LocalIcons (= 3.19.0)
+  - AndesUI/AndesBottomSheet (3.19.0):
+    - AndesUI/Core
+  - AndesUI/AndesDropdown (3.19.0):
+    - AndesUI/AndesBottomSheet
+    - AndesUI/Core
+  - AndesUI/Core (3.19.0):
+    - AndesUI/LocalIcons
+  - AndesUI/LocalIcons (3.19.0)
 
 DEPENDENCIES:
   - AndesUI (from `AndesUI.podspec`)
-  - MyFramework (from `MyFramework.podspec`)
 
 EXTERNAL SOURCES:
   AndesUI:
     :podspec: AndesUI.podspec
-  MyFramework:
-    :podspec: MyFramework.podspec
 
 SPEC CHECKSUMS:
-  AndesUI: c086a3b137a1e2c0f1abdbce4c7d5146b9843ab0
-  MyFramework: 6b7ad721097b63d24d0f238a7f09c03498646aa5
+  AndesUI: cd1016e88d24d2d119e5324f459caf734560f913
 
-PODFILE CHECKSUM: 83a2d643b6e4800ae68fbf5ea07c6ffc5e5ec48b
+PODFILE CHECKSUM: c94d9c759d1184ef77b7afe0dbb8af56e7bd0ee1
 
 COCOAPODS: 1.10.0
