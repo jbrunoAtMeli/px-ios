@@ -8,8 +8,13 @@ Pod::Spec.new do |s|
     s.license         =  { :type => 'BSD' }
 
 
-    s.source           = { :http => 'http://127.0.0.1/AndesUI.zip' }
     #s.source           = { :git => 'https://github.com/mercadolibre/fury_andesui-ios.git', :tag => s.version.to_s }
+
+   
+
+
+    #s.source           = { :http => 'http://127.0.0.1/AndesUI.zip' }
+    s.source           = { :http => 'https://mercadolibre.bintray.com/ios-public/AndesUI.zip' }
 
     s.platform         = :ios, '10.0'
     s.swift_version = '5.0'
