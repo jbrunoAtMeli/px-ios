@@ -2471,7 +2471,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		13C30CBB361E805E95873FD9DAFE0CE6 /* Release */ = {
+		11D3120DB5C1F197F7DF53641FBD4BEB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BD7549D607ADCF110B65226039787CF5 /* AndesUI.release.xcconfig */;
 			buildSettings = {
@@ -2487,7 +2487,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/AndesUI/AndesUI-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/AndesUI/AndesUI-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2508,67 +2508,15 @@
 			};
 			name = Release;
 		};
-		1BA6B28873CA88387C09DB5DD9C77BC7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7386305078875122868930E75653BA0F /* AndesUI.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AndesUI/AndesUI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AndesUI/AndesUI-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/AndesUI/AndesUI.modulemap";
-				PRODUCT_MODULE_NAME = AndesUI;
-				PRODUCT_NAME = AndesUI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		28714D6EFDB9BF65F8B1E3479ECE0692 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD7549D607ADCF110B65226039787CF5 /* AndesUI.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AndesUI";
-				IBSC_MODULE = AndesUI;
-				INFOPLIST_FILE = "Target Support Files/AndesUI/ResourceBundle-AndesUIResources-AndesUI-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = AndesUIResources;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		2A4D1837E269F9976D85887A66312B3A /* Debug */ = {
+		161947910BB61933E410096C4EAC4E8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7386305078875122868930E75653BA0F /* AndesUI.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AndesUI";
 				IBSC_MODULE = AndesUI;
-				INFOPLIST_FILE = "Target Support Files/AndesUI/ResourceBundle-AndesUIResources-AndesUI-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = AndesUIResources;
+				INFOPLIST_FILE = "Target Support Files/AndesUI/ResourceBundle-AndesDropdownResources-AndesUI-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = AndesDropdownResources;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2678,6 +2626,22 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		5F8E2A8C9E0076BEDC48DC1C98E6EFD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD7549D607ADCF110B65226039787CF5 /* AndesUI.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AndesUI";
+				IBSC_MODULE = AndesUI;
+				INFOPLIST_FILE = "Target Support Files/AndesUI/ResourceBundle-AndesDropdownResources-AndesUI-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = AndesDropdownResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
 		};
 		6032B2A9F468DC4FF0FAEB32841927EB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2817,14 +2781,14 @@
 			};
 			name = Release;
 		};
-		7795AC5F9C12A1E0E264FF32619E30FA /* Release */ = {
+		835E9787258108DF89D9EA381ACC5308 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BD7549D607ADCF110B65226039787CF5 /* AndesUI.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AndesUI";
 				IBSC_MODULE = AndesUI;
 				INFOPLIST_FILE = "Target Support Files/AndesUI/ResourceBundle-AndesIcons-AndesUI-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_NAME = AndesIcons;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2833,37 +2797,21 @@
 			};
 			name = Release;
 		};
-		89B356BBC9C79FAA30F0AF0B8BDE3E88 /* Release */ = {
+		8775DB6E24950CCB2AEEC0EE81030AF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BD7549D607ADCF110B65226039787CF5 /* AndesUI.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AndesUI";
 				IBSC_MODULE = AndesUI;
-				INFOPLIST_FILE = "Target Support Files/AndesUI/ResourceBundle-AndesDropdownResources-AndesUI-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = AndesDropdownResources;
+				INFOPLIST_FILE = "Target Support Files/AndesUI/ResourceBundle-AndesUIResources-AndesUI-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = AndesUIResources;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
-		};
-		99F6D1BE6E0702E476A169237A7A7FBA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7386305078875122868930E75653BA0F /* AndesUI.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AndesUI";
-				IBSC_MODULE = AndesUI;
-				INFOPLIST_FILE = "Target Support Files/AndesUI/ResourceBundle-AndesIcons-AndesUI-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = AndesIcons;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
 		};
 		A0FD240B9426C864E5D9DC87E2B492B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2902,6 +2850,58 @@
 			};
 			name = Debug;
 		};
+		B39A0EB3DD32E1A31D00AC564A47F521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7386305078875122868930E75653BA0F /* AndesUI.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AndesUI/AndesUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AndesUI/AndesUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/AndesUI/AndesUI.modulemap";
+				PRODUCT_MODULE_NAME = AndesUI;
+				PRODUCT_NAME = AndesUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BDEA0E503620FB220A1FFE1061EBDDEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7386305078875122868930E75653BA0F /* AndesUI.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AndesUI";
+				IBSC_MODULE = AndesUI;
+				INFOPLIST_FILE = "Target Support Files/AndesUI/ResourceBundle-AndesIcons-AndesUI-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = AndesIcons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		C32F2A1663FFBD71A89B321B468F3AAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A660C5EA2B851A61090C06203CAE1DE1 /* Pods-usamosAndes.debug.xcconfig */;
@@ -2936,22 +2936,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C6802A8B62A27EB19564F9509740A8CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7386305078875122868930E75653BA0F /* AndesUI.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AndesUI";
-				IBSC_MODULE = AndesUI;
-				INFOPLIST_FILE = "Target Support Files/AndesUI/ResourceBundle-AndesDropdownResources-AndesUI-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = AndesDropdownResources;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -2993,14 +2977,30 @@
 			};
 			name = Release;
 		};
+		EB884E9E45205D584D756E8F44618861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7386305078875122868930E75653BA0F /* AndesUI.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AndesUI";
+				IBSC_MODULE = AndesUI;
+				INFOPLIST_FILE = "Target Support Files/AndesUI/ResourceBundle-AndesUIResources-AndesUI-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = AndesUIResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		19E452E8F5E9C26F5EE76C9C21C88D01 /* Build configuration list for PBXNativeTarget "AndesUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1BA6B28873CA88387C09DB5DD9C77BC7 /* Debug */,
-				13C30CBB361E805E95873FD9DAFE0CE6 /* Release */,
+				B39A0EB3DD32E1A31D00AC564A47F521 /* Debug */,
+				11D3120DB5C1F197F7DF53641FBD4BEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3008,8 +3008,8 @@
 		2348D7B127F79F1C9D57DA2647D3F78E /* Build configuration list for PBXNativeTarget "AndesUI-AndesIcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				99F6D1BE6E0702E476A169237A7A7FBA /* Debug */,
-				7795AC5F9C12A1E0E264FF32619E30FA /* Release */,
+				BDEA0E503620FB220A1FFE1061EBDDEC /* Debug */,
+				835E9787258108DF89D9EA381ACC5308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3026,8 +3026,8 @@
 		359556E094EE6B371D34621282C4DEB6 /* Build configuration list for PBXNativeTarget "AndesUI-AndesDropdownResources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C6802A8B62A27EB19564F9509740A8CF /* Debug */,
-				89B356BBC9C79FAA30F0AF0B8BDE3E88 /* Release */,
+				161947910BB61933E410096C4EAC4E8E /* Debug */,
+				5F8E2A8C9E0076BEDC48DC1C98E6EFD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3062,8 +3062,8 @@
 		A5B730B30314363F6BD107D771EEDBE1 /* Build configuration list for PBXNativeTarget "AndesUI-AndesUIResources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A4D1837E269F9976D85887A66312B3A /* Debug */,
-				28714D6EFDB9BF65F8B1E3479ECE0692 /* Release */,
+				EB884E9E45205D584D756E8F44618861 /* Debug */,
+				8775DB6E24950CCB2AEEC0EE81030AF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
